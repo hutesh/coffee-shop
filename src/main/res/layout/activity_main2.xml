@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.hutesh.sunshine.app.Main2Activity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coffee with Friends"
+            android:textStyle="italic"
+            android:nextFocusUp="@id/welcome"
+            android:nextFocusLeft="@id/welcome"
+            android:textColor="#ccc"
+            android:background="#4c0000"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:textSize="38sp" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="258dp"
+            android:src="@drawable/cofee12"
+            android:id="@+id/cofeecup"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+        <TextView
+            android:id="@+id/loginBtn"
+            android:layout_width="197dp"
+            android:layout_height="wrap_content"
+            android:text="LogIn/SignUp"
+            android:background="#ccc"
+            android:textColor="#250716"
+            android:textSize="30sp"/>
+            <TextView
+                android:id="@+id/login"
+                android:background="#ccc"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID :"
+                android:textColor="#250716"
+                android:textSize="25sp"/>
+
+        <EditText
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:focusableInTouchMode="true"
+            android:id="@+id/editID"
+            android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/password"
+                android:background="#ccc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:text="Password :"
+                android:textColor="#250716"
+                android:textSize="20sp"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:focusableInTouchMode="true"
+            android:ems="10"
+            android:id="@+id/editPAS"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/Submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:layout_marginTop="23dp"
+            android:background="#ccc"
+            android:text="LogIn"
+            android:textSize="15sp"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Registration Here"
+            android:id="@+id/registrationID"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="10dp" />
+
+    </LinearLayout>
+</ScrollView>

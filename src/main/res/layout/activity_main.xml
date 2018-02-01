@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.hutesh.sunshine.app.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffc0cb"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome To Cofee"
+            android:textStyle="italic"
+            android:paddingLeft="20dp"
+            android:nextFocusUp="@id/heading"
+            android:nextFocusLeft="@id/heading"
+            android:paddingTop="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#187a73"
+            android:textColor="#c9e9d4"
+            android:textSize="40sp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="258dp"
+                android:src="@drawable/cofee12"
+                android:id="@+id/cofeecup"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+            <TextView
+                android:id="@+id/myname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/cofeecup"
+                android:layout_alignRight="@+id/cofeecup"
+                android:layout_alignBottom="@+id/cofeecup"
+                android:layout_alignTop="@+id/cofeecup"
+                android:gravity="right"
+                android:layout_marginTop="210dp"
+                android:text="H.K.Gauttam"
+                android:textStyle="italic"
+                android:textColor="#ccc"
+                android:textSize="30sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Coustmer Detail"
+            android:textStyle="italic"
+            android:background="#9d869d"
+            android:textColor="#4c0000"
+            android:paddingBottom="5dp"
+            android:textSize="40sp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            />
+        <EditText
+            android:layout_width="243dp"
+            android:hint="Enter Name"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_height="wrap_content"
+            android:id="@+id/idname"
+            android:inputType="textCapWords"/>
+
+        <EditText
+            android:layout_width="243dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/idnum"
+            android:textColor="#ff2f"
+            android:hint="Enter Mobile No."
+            android:inputType="phone"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="Enter Address"
+            android:layout_height="wrap_content"
+            android:id="@+id/idaddr"
+            android:inputType="text"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:text="Coffee       Rs 10"
+                android:background="#ccc"
+                android:textColor="#250716"
+                android:textSize="30sp"/>
+            <Button
+                android:id="@+id/minusbutton1"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:onClick="decrement1"
+                android:text="-"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="0"
+                android:textColor="#250716"
+                android:textSize="30sp" />
+            <Button
+                android:id="@+id/plusbutton1"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:onClick="increment1"
+                android:text="+"
+                android:textSize="15sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/text11"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:text="Icecream  Rs 25"
+                android:background="#ccc"
+                android:textColor="#250716"
+                android:textSize="30sp"/>
+            <Button
+                android:id="@+id/minusbutton2"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:onClick="decrement2"
+                android:text="-"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/text12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="0"
+                android:textColor="#250716"
+                android:textSize="30sp" />
+            <Button
+                android:id="@+id/plusbutton2"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:onClick="increment2"
+                android:text="+"
+                android:textSize="15sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/text13"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:text="Colddrink  Rs 15"
+                android:background="#ccc"
+                android:textColor="#250716"
+                android:textSize="30sp"/>
+            <Button
+                android:id="@+id/minusbutton3"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:onClick="decrement3"
+                android:text="-"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/text14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="0"
+                android:textColor="#250716"
+                android:textSize="30sp" />
+            <Button
+                android:id="@+id/plusbutton3"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:onClick="increment3"
+                android:text="+"
+                android:textSize="15sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/text15"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:text="Snacks      Rs 40"
+                android:background="#ccc"
+                android:textColor="#250716"
+                android:textSize="30sp"/>
+            <Button
+                android:id="@+id/minusbutton4"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:onClick="decrement4"
+                android:text="-"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/text16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="0"
+                android:textColor="#250716"
+                android:textSize="30sp" />
+            <Button
+                android:id="@+id/plusbutton4"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:onClick="increment4"
+                android:text="+"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/idbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="btnClick"
+            android:text="Give Your Pic"
+            android:textSize="20sp"/>
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="239dp"
+            android:layout_height="250dp"
+            android:gravity="center"
+            android:background="#ccc"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="4.50" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="price"
+            android:background="#ccc"
+            android:textColor="#250716"
+            android:textSize="30sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/rupee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs "
+                android:textColor="#250716"
+                android:textSize="30sp"/>
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#f344"
+                android:textSize="30sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/button"
+                android:layout_width="157dp"
+                android:layout_height="wrap_content"
+                android:onClick="submitOrder"
+                android:text="order"
+                android:textSize="40sp" />
+            <Button
+                android:id="@+id/sendbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="buttonClick"
+                android:layout_marginLeft="30dp"
+                android:text="send Now"
+                android:textSize="30sp" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/finalsubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="gmailclick"
+            android:layout_marginLeft="7dp"
+            android:text="Submit"
+            android:background="#187a73"
+            android:textColor="#c9e9d4"
+            android:layout_marginTop="30dp"
+            android:textSize="35sp"
+            android:layout_gravity="center_horizontal" />
+        <TextView
+            android:id="@+id/payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pay Money"
+            android:textStyle="italic"
+            android:background="#187a73"
+            android:textColor="#c9e9d4"
+            android:layout_marginTop="10dp"
+            android:textSize="40sp"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Online"
+                android:textSize="30sp"
+                android:id="@+id/radioButton1"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cash On"
+                android:textSize="30sp"
+                android:id="@+id/radioButton2"/>
+        </RadioGroup>
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="message"
+            android:textColor="#4c0000"
+            android:paddingTop="20dp"
+            android:textSize="30sp"/>
+        <Button
+            android:id="@+id/bheembutton"
+            android:layout_width="wrap_content"
+            android:onClick="paymentfun"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="30dp"
+            android:text="BheemApp"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+</ScrollView>
